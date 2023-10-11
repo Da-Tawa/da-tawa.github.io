@@ -43,7 +43,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 30.4375, 20.5625 )
+extents = Vector2( 57, 30.5 )
 
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 28.5, 16 )
@@ -207,13 +207,13 @@ collision_mask = 4
 [node name="hurtbox" type="Area2D" parent="slime_blå"]
 
 [node name="Collision" type="CollisionShape2D" parent="slime_blå/hurtbox"]
-position = Vector2( 2, -9 )
+position = Vector2( 3, -14.5 )
 shape = SubResource( 10 )
 
 [node name="Area2D" type="Area2D" parent="slime_blå"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="slime_blå/Area2D"]
-polygon = PoolVector2Array( -21, -4, -15, -13, -7, -19, 13, -19, 20, -16, 30, -7, 33, 6, 31, 17, -20, 13, -31, 16, -30, 7 )
+polygon = PoolVector2Array( -21, -4, -15, -13, -7, -19, 13, -19, 20, -16, 30, -7, 33, 6, 31, 17, -20, 13, -21, 10, -18, 5 )
 
 [node name="slime_orange" type="KinematicBody2D" parent="."]
 position = Vector2( 556, 16 )
@@ -248,14 +248,14 @@ collision_mask = 4
 [node name="hurtbox" type="Area2D" parent="slime_orange"]
 
 [node name="Collision" type="CollisionShape2D" parent="slime_orange/hurtbox"]
-position = Vector2( 1.25, -8.25 )
+position = Vector2( -1.5, -10 )
 shape = SubResource( 10 )
 one_way_collision_margin = 0.0
 
 [node name="Area2D" type="Area2D" parent="slime_orange"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="slime_orange/Area2D"]
-polygon = PoolVector2Array( -34, 15, -33, 9, -33, -3, -22, -4, -12, -15, 0, -18, 9, -18, 15, -17, 27, -8, 32, -2, 32, 15, 17, 12, -12, 11 )
+polygon = PoolVector2Array( -19, 15, -19, 6, -21, 4, -22, -4, -12, -15, 0, -18, 9, -18, 15, -17, 27, -8, 32, -2, 32, 15, 17, 12, -11, 15 )
 
 [connection signal="area_entered" from="slime_grøn/hurtbox" to="slime_grøn" method="_on_hurtbox_area_entered"]
 [connection signal="body_entered" from="slime_grøn/Area2D" to="slime_grøn" method="_on_Area2D_body_entered"]

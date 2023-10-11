@@ -3,7 +3,7 @@ extends KinematicBody2D
 var gravity = 10
 var velocity = Vector2(0,0)
 var is_moving_right = true
-var Health = 50 
+var Health = 25 
 var speed = 32
 
 func _ready():

@@ -45,7 +45,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 27.5, 24 )
+extents = Vector2( 56.5, 39.5 )
 
 [sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 18, 15 )
@@ -205,7 +205,7 @@ collision_mask = 4
 [node name="hurtbox" type="Area2D" parent="Grøn_flagermus"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Grøn_flagermus/hurtbox"]
-position = Vector2( -1.5, -9 )
+position = Vector2( -0.5, -5.5 )
 shape = SubResource( 13 )
 
 [node name="Area2D" type="Area2D" parent="Grøn_flagermus"]

@@ -10,7 +10,7 @@ radius = 16.0
 height = 32.0
 
 [sub_resource type="RectangleShape2D" id=51]
-extents = Vector2( 34, 22 )
+extents = Vector2( 59, 49.5 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Attack"
@@ -27,7 +27,7 @@ tracks/0/keys = {
 "values": [ 6, 6, 7, 8, 9 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Sprite/SwordHit/CollisionShape2D:disabled")
+tracks/1/path = NodePath("Sprite/SwordHit/Swordhit:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -104,7 +104,7 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Sprite/SwordHit/CollisionShape2D:disabled")
+tracks/1/path = NodePath("Sprite/SwordHit/Swordhit:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -233,8 +233,8 @@ vframes = 6
 [node name="SwordHit" type="Area2D" parent="Sprite"]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/SwordHit"]
-position = Vector2( 49, 22 )
+[node name="Swordhit" type="CollisionShape2D" parent="Sprite/SwordHit"]
+position = Vector2( 45, -5.5 )
 shape = SubResource( 51 )
 disabled = true
 

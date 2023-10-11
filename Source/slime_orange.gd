@@ -4,7 +4,7 @@ extends KinematicBody2D
 var gravity = 10
 var velocity = Vector2(0,0)
 var is_moving_right = true
-var Health = 50
+var Health = 25
 
 var speed = 32
 
@@ -40,7 +40,7 @@ func die():
 func _on_hurtbox_area_entered(area):
 	if area.name == "SwordHit":
 		Health -= GlobalScript.player_damage
-
+		print(1)
 
 func _on_Area2D_body_entered(body):
 	if body.name == "Player":
