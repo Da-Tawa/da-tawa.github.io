@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Fonts/Roboto-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://mainMenu.gd" type="Script" id=2]
 [ext_resource path="res://Grafik/Da Tawa kunst Version 1/Da-Tawa.png" type="Texture" id=3]
-[ext_resource path="res://Grafik/Dr_Lukket.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 120
@@ -164,10 +163,6 @@ custom_styles/hover = SubResource( 3 )
 custom_styles/pressed = SubResource( 4 )
 custom_styles/normal = SubResource( 5 )
 text = "Exit Game"
-
-[node name="DrLukket" type="Sprite" parent="."]
-position = Vector2( 424, 111 )
-texture = ExtResource( 4 )
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer/PlayGameButton" to="." method="_on_PlayGameButton_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer2/ExitButton" to="." method="_on_ExitButton_pressed"]
